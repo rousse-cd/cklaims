@@ -1,0 +1,455 @@
+body {
+    font: 15px Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estlos globales */
+  .contenedor {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  ul {
+    display: block;
+    padding: 0.1rem 1rem;
+    transition: all 0.1s linear;
+    border-radius: 15px;
+  }
+  
+  .boton1 {
+    display: inline-block;
+    width: 70px;
+    height: 36px;
+    outline: none;
+    background: #9f8ad0;
+    
+    padding-left: 2px;
+    padding-right: 2px;
+    color: #fff;
+  }
+  /* Menu */
+
+.hamburguer {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+}
+
+.menu-navegacion {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: transform .3s ease-in-out;
+    transform: translate(110%);
+    box-shadow: 0 0 6px rgb(0, 0, 0, .5);
+}
+
+.spread{
+    transform: translate(0);
+}
+
+.menu-navegacion a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.copy{
+    font-weight: 300;
+    font-size: 25px;
+}
+  /* encabezado */
+  header {
+    
+    color: rgb(0, 255, 106);
+    padding-top: 20px;
+    min-height: 20px;
+    border-bottom: 5px solid black;
+  }
+  
+  header a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+  }
+  
+  header li {
+    float: left;
+    display: inline;
+    padding: 0 10px 0 60px;
+  }
+  
+  header #marca {
+    float: left;
+  }
+  
+  header #marca h1 {
+    margin: 0;
+  }
+  
+  header nav {
+    float: left;
+    margin-top: -18px;
+  }
+  
+  header .resaltado,
+  header .actual a {
+    color: black;
+    font-weight: bold;
+  }
+  
+  header a:hover {
+    color: #ccc;
+    font-weight: bold;
+  }
+  
+  /* cabecera */
+  
+  #cabecera h2 {
+    margin-top: 100px;
+    font-size: 4em;
+    margin-bottom: 10px;
+    color: rgb(0, 247, 255);
+  }
+  
+  .cajaaa {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .cuadroo {
+    position: absolute;
+    margin: 90px;
+    top: 50px;
+    left: 45%;
+  
+    margin: 1rem;
+    padding: 1rem;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: bold;
+    font-size: 3.5vw;
+    color: black;
+  }
+  
+  .texto2 {
+    position: absolute;
+    top: 20%;
+    left: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: left;
+    font-size: 3vw;
+    color: black;
+  }
+  
+  #imagen {
+    margin-top: -2%;
+  }
+  
+  .caritaa {
+    text-align: center;
+    color: black;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+  }
+  
+  #carita-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  #cabecera p {
+    font-size: 20px;
+    text-align: center;
+    text-indent: 25px;
+    font-size: 1.5em;
+    font-family: "raleway", sans-serif;
+    
+  }
+  
+  /* formulario boletin */
+  #boletin {
+    padding: 10px;
+    color: white;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  }
+  
+  #boletin h1 {
+    float: left;
+  }
+  
+  #boletin form {
+    float: right;
+    margin-top: 15px;
+  }
+  
+  #boletin input[type="email"] {
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+  }
+  
+  /* cajas */
+  #cajas {
+    margin-top: 20px;
+  }
+  
+  #cajas .caja1 {
+    float: left;
+    text-align: center;
+    width: 30%;
+    margin-top: 5px;
+  }
+  
+  #cajas .caja1 img {
+    width: 100px;
+  }
+  
+  #cajas .caja2 {
+    float: left;
+    text-align: center;
+    width: 30%;
+    margin-top: 33px;
+  }
+  
+  #cajas .caja2 img {
+    width: 100px;
+  }
+  #cajas .caja3 {
+    float: right;
+    text-align: center;
+    width: 30%;
+    margin-top: 14px;
+  }
+  
+  #cajas .caja3 img {
+    width: 100px;
+  }
+  /* para lateral */
+  aside#lateral {
+    float: right;
+    width: 30%;
+    margin-top: 30px;
+  }
+  
+  /* main-col */
+  article#main-col {
+    float: left;
+    width: 65%;
+  }
+  
+  /* estilos para sesion servicios */
+  ul#servicios li {
+    list-style: none;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    background-color: #97f1ff;
+  }
+  
+  /* footer o pie de pagina */
+  footer{
+    background: #9f8ad0;
+    padding-bottom: 0.1px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+.contact-us{
+    width: 40%;
+    color: #fff;
+}
+
+.brand{
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.brand+p{
+    font-weight: 500;
+}
+
+
+.social-media{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media-icon{
+    display: inline-block;
+    margin-left: 20px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+}
+
+.social-media-icon:hover{
+    background: #fff;
+    color:#764ba2
+}
+
+.social-media-icon i{
+    font-size: 30px;
+    line-height: 60px;
+}
+
+.line{
+    width: 90%;
+    max-width: 1200px;
+    margin:0 auto;
+    height: 2px;
+    background: #fff;
+    margin-bottom: 60px;
+} 
+  
+  /* formulario de contacto */
+  #contenedor {
+    width: 100%;
+    margin: 40px auto;
+    background: #fff;
+  }
+  .formulario .contenedorinput {
+    border-radius: 6px 6px 0 0;
+    background: rgba(255, 255, 255, 0);
+  }
+  .formulario input[type="text"],
+  .formulario input[type="mail"] {
+    display: block;
+    width: 99%;
+    margin-bottom: 5px;
+    font-family: "Slabo 13px", serif;
+    font-size: 18px;
+  }
+  
+  .formulario input[type="text"]:focus,
+  .formulario input[type="mail"]:focus {
+    border-bottom: 2px solid #246eb9;
+  }
+  
+  .botondeopciones {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+  }
+  
+  .formulario .botondeopciones {
+    color: #424242;
+    padding: 10px 10px;
+    text-align: center;
+    font-family: "Slabo 13px", serif;
+    font-size: 18px;
+  }
+  .formulario .botondeopciones label {
+    margin-left: 10px;
+  }
+  .formulario input[type="radio"]:checked + .botondeopciones label {
+    background-color: #f9a03f;
+    color: #fff;
+  }
+  .casilladeverificacion {
+    text-align: center;
+    color: #424242;
+  }
+  .casilladeverificacion label {
+    margin-left: 10px;
+  }
+  
+  .formulario .error {
+    display: none;
+    margin-top: 20px;
+    border-radius: 3px;
+    background: red;
+    color: #fff;
+    padding: 15px 10px;
+    padding-left: 40px;
+  }
+  
+  .boton {
+    width: 100%;
+    text-align: center;
+    background: #9f8ad0;
+    color: #fff;
+    border: none;
+    display: block;
+    padding: 15px 10px;
+    cursor: pointer;
+    border-radius: 0 0 6px 6px;
+    font-family: "Slabo 13px", serif;
+    font-size: 18px;
+  }
+  
+  .formulario .boton:hover {
+    background-color: #604ff3;
+  }
+  
+  /* media queries - responsive */
+  @media (max-width: 768px) {
+    header #marca,
+    header nav,
+    header nav li,
+    #boletin h1,
+    #boletin form,
+    #cajas .caja,
+    article#main-col,
+    aside#lateral {
+      float: none;
+      text-align: left;
+      width: 100%;
+    }
+  
+    header {
+      padding-bottom: 20px;
+    }
+  
+    #boletin h1 {
+      margin-top: 40px;
+    }
+  
+    #boletin buttom {
+      display: block;
+      width: 100%;
+    }
+  
+    #boletin form input[type="email"] {
+      width: 100%;
+      margin-bottom: px;
+    }
+  
+    input,
+    textarea {
+      width: 98%;
+    }
+  }

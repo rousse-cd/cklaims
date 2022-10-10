@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CKlaims</title>
+    <link rel="stylesheet" type="text/css" href="./css/contacto.css" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <img src="./img/hamburguesa.svg" alt="" class="hamburguer">
+        <nav class="menu-navegacion">
+            <!-- ACÁ CREARAN LA PAGINA DEL GRUPO -->
+            <a href="https://music-recycling.000webhostapp.com/">Inicio</a>
+            <a href="/contacto.html">Contáctanos</a>
+            <a href="/productos.html">Productos</a>
+            <a href="/nosotros.html">Nosotros</a>
+            <!-- ACÁ CREARAN LA PAGINA DEL GRUPO -->
+        </nav>
+    </header>
+    <section id="boletin">
+      <div class="contenedor">
+        <h1>¡Únete a nosotros!</h1>
+        <form>
+          <input type="email" name="email" placeholder="Ingrese el email..." />
+          <button type="submit" class="boton1">Suscribete</button>
+        </form>
+      </div>
+    </section>
+
+    <section id="main">
+      <div class="contenedor">
+        <article id="main-col">
+          <h1>Contacto</h1>
+          <div class="contenedor" id="contenedor">
+            <div class="contenedorinput">
+              <label>Nombres</label>
+              <hr />
+              <input
+                type="text"
+                id="txtNom"
+                name="txtNom"
+                placeholder="Nombres"
+                required
+              />
+              <hr />
+              <label>Apellidos</label>
+              <hr />
+              <input
+                type="text"
+                id="txtApe"
+                name="txtApe"
+                placeholder="Apellidos"
+                required
+              />
+              <hr />
+              <label>Correo</label>
+              <hr />
+              <input
+                type="mail"
+                id="txtCor"
+                name="txtCor"
+                placeholder="Correo"
+                required
+              />
+              <hr />
+              <label>Telefono</label>
+              <hr />
+              <input
+                type="text"
+                id="txtTel"
+                name="txtTel"
+                placeholder="Telefono"
+                required
+              />
+              <hr />
+
+              <div class="botondeopciones">
+                <hr />
+                <label>Sexo:</label>
+                <input type="radio" name="sexo" id="rbMas" />
+                <label for="rbMas">Masculino</label>
+                <input type="radio" name="sexo" id="rbFem" />
+                <label for="rbFem">Femenino</label>
+                <input type="radio" name="sexo" id="rbOtr" />
+                <label for="rbOtr">Otros</label>
+                <hr />
+              </div>
+              <ul class="error" name="error" id="error"></ul>
+              <input
+                type="button"
+                value="Registrar"
+                name="btnRegistrar"
+                id="btnRegistrar"
+                class="boton"
+                onclick="Validar()"
+              />
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer id="contacto">
+        <div class="contenedor footer-content">
+            <div class="contac-us">
+                <h2 class="brand">Music Recycling</h2>
+                <p>Somos expertos en la creación de tus sueños</p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.facebook.com/Music-Recycling-105259715239559" class="social-media-icon">
+                    <i class="bx bxl-facebook-circle"></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/contacto.js" type="text/javascript"></script>
+    <script src="js/menu.js"></script>
+    <script src="https://account.snatchbot.me/script.js"></script><script>window.sntchChat.Init(202663)</script> 
+  </body>
+</html>
